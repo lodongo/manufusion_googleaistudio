@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Document Metadata and Charset -->
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEMS - Manufusion Enterprise Management System</title>
+    
+    <!-- External Fonts: Inter family via Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Framework: Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Tailwind configuration to extend the default theme with custom fonts
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- 
+      ES Module Import Map: 
+      Maps module specifiers to absolute URLs. This allows the browser to resolve 
+      dependencies like 'react' or 'firebase' natively without a separate build step.
+    -->
+    <script type="importmap">
+    {
+      "imports": {
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "react": "https://esm.sh/react@^19.2.3",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "uuid": "https://esm.sh/uuid@^13.0.0",
+        "jspdf": "https://esm.sh/jspdf@^3.0.4",
+        "qrcode": "https://esm.sh/qrcode@^1.5.4",
+        "html2canvas": "https://esm.sh/html2canvas@^1.4.1",
+        "firebase/": "https://esm.sh/firebase@^12.7.0/",
+        "libphonenumber-js": "https://esm.sh/libphonenumber-js@^1.12.33"
+      }
+    }
+    </script>
+  </head>
+  <body class="bg-slate-50">
+    <!-- Main application mount point for React -->
+    <div id="root"></div>
+
+    <!-- Application Entry Point Script -->
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

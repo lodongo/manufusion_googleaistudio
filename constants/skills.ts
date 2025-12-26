@@ -1,0 +1,2 @@
+
+export const defaultSkills: any[] = [];

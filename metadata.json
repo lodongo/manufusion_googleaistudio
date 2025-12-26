@@ -1,0 +1,7 @@
+{
+  "name": "Working Backup",
+  "description": "A professional, minimalistic, and simple login and sign-up page integrated with Firebase Authentication. Features email validation to restrict public and specific domains, and phone number validation with a comprehensive country code list.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
